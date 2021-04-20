@@ -1,0 +1,26 @@
+
+<div class="container mt-3 mb-3">
+  
+  <div class="row">
+        <div class="col-3 bg-info">
+          <p>Users</p>
+          <ul *ngFor="let e of userdata">
+           <li (click)="clciklink($event.target.id)" style="cursor: pointer;" title="Click here to check details"><a id="{{e.id}}">{{e.login}}  </a></li>
+          </ul>
+        </div>
+        <div class="col-9 bg-primary">
+          <p>User-details</p>
+          <app-user-details *ngIf="user" [user]="user"></app-user-details>
+        </div>
+</div>
+    
+</div>
+
+
+
+
+
+
+
+
+ 

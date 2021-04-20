@@ -1,0 +1,116 @@
+
+
+<div class="row mt-3">
+  
+    <div class="col col-md-4">
+   
+        <div class="card user-card">
+         
+            <div class="background bg-info">
+              <img
+                class="img-fluid rouded-circle profile-pic border-2 border-white"
+                [src]="user.avatar_url"
+                alt="User Image"
+              />
+            </div>
+          
+            <div class="card-body">
+              <h5 class="card-title">
+                login: {{ user.login }}
+              </h5>
+              <p class="card-text">id: {{ user.id }}</p>
+              <p class="card-text">type: {{ user.type }}</p>
+              <p class="card-text">site_admin: {{ user.site_admin }}</p>
+              <p class="card-text">
+                Updated at:
+                {{ user.updated_at | date: "short" }}
+              </p>
+            </div>
+          </div>
+    </div>
+    <div class="col col-md-8">
+  
+        <div  class="list-group">
+            <a
+              target="_blank"
+              class="list-group-item list-group-item-action"
+            >
+            node_id: {{ user.node_id }}
+            </a>
+            <a
+              target="_blank"
+              class="list-group-item list-group-item-action"
+         
+            >
+            gravatar_id: {{ user.gravatar_id }}
+            </a>
+            <a
+              target="_blank"
+              class="list-group-item list-group-item-action"
+            >
+            url: {{ user.url }}
+            </a>
+            <a
+              target="_blank"
+              class="list-group-item list-group-item-action"
+            >
+            html_url: {{ user.html_url }}
+            </a>
+            <a
+              target="_blank"
+              class="list-group-item list-group-item-action"
+            >
+            followers_url: {{ user.followers_url }}
+            </a>
+            <a
+              target="_blank"
+              class="list-group-item list-group-item-action"
+            >
+            following_url: {{ user.following_url }}
+            </a>
+            <a
+              target="_blank"
+              class="list-group-item list-group-item-action"
+            >
+            gists_url: {{ user.gists_url }}
+            </a>
+            <a
+              target="_blank"
+              class="list-group-item list-group-item-action"
+            >
+            starred_url: {{ user.starred_url }}
+            </a>
+            <a
+            target="_blank"
+            class="list-group-item list-group-item-action"
+          >
+          subscriptions_url: {{ user.subscriptions_url }}
+          </a>
+          <a
+          target="_blank"
+          class="list-group-item list-group-item-action"
+        >
+        organizations_url: {{ user.organizations_url }}
+        </a>
+        <a
+        target="_blank"
+        class="list-group-item list-group-item-action"
+      >
+      repos_url: {{ user.repos_url }}
+      </a>
+      <a
+      target="_blank"
+      class="list-group-item list-group-item-action"
+    >
+    events_url: {{ user.events_url }}
+    </a>
+    <a
+    target="_blank"
+    class="list-group-item list-group-item-action"
+  >
+  received_events_url: {{ user.received_events_url }}
+  </a>
+  
+          </div>
+    </div>
+  </div>
